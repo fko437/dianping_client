@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/little_space">
+<TextView
+    android:id="@+id/goods_details_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/title_text_size"
+    android:textStyle="bold"
+    android:text="@string/goods_details_title"
+    android:padding="@dimen/little_space"/>
+    <ImageView
+        android:padding="@dimen/little_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:contentDescription="@null"/>
+    <WebView
+        android:id="@+id/tv_more_details_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+    <ImageView
+        android:padding="@dimen/little_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:contentDescription="@null"/>
+    <TextView
+        android:id="@+id/tv_more_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_more_details"
+        android:gravity="center"
+        android:textColor="@color/normal_orange_color"/>
+</LinearLayout>

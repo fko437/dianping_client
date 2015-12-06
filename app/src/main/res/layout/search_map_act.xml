@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_title"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/white"
+        android:background="@color/normal_orange_color"
+        android:gravity="center"
+        android:padding="@dimen/little_space"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            android:id="@+id/search_mymap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="20dp"
+            android:background="@color/normal_bg_color"
+            android:src="@drawable/back"/>
+        <ImageView
+            android:id="@+id/search_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="5dp"
+            android:background="@color/normal_bg_color"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/map_refresh"/>
+    </RelativeLayout>
+</LinearLayout>
